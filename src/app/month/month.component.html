@@ -1,0 +1,15 @@
+<html dir="rtl">
+  <header>
+    <h1>דף חודשי</h1>
+    <h2> {{monthText.welcome + ' '  + userName }}</h2>
+    <h3><a [routerLink]="['/table', 'test']">param test</a></h3>
+    <button class="btn btn-primary" (click)="Logout()" >Logout</button>
+    <button class="btn btn-primary" (click)="setAShift()" >Set a shift example</button>
+  </header>
+  <body>
+    <div class="conteiner">
+      <app-week *ngFor="let week of month; let i = index"></app-week>
+    </div>
+    <router-outlet></router-outlet>
+  </body>
+</html>

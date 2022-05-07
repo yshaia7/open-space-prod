@@ -1,0 +1,8 @@
+
+.day {
+  flex-direction: column;
+  width: 11em;
+  height: 8em;
+  border: black 1px solid;
+  margin: 1px;
+}
